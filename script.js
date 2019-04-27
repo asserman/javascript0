@@ -1,13 +1,24 @@
 'use strict';
-console.log(a);
-let person = {
-    name: "John",
-    age: 25,
-    isMarried: false
+
+var money = +prompt("Ваш бюджет на месяц?");
+var time = prompt("Ведите дату в формате YYYY-MM-DD");
+
+var exp01 = prompt("Введите обьязательную статью в этом месяце");
+var exp02 = prompt("Во сколько обойдется");
+var exp11 = prompt("Введите обьязательную статью в этом месяце");
+var exp12 = prompt("Во сколько обойдется");
+var userExpenses = {
+    exp01: exp02,
+    exp11: exp12
 }
-person.age = person.age;
-console.log(person["name"]+'  '+person.age);
-let arr = ['plum.png', 'orange.jpg', 'apple.bmp'];
-for (const t of arr) {
-    console.log(t)
-}
+var userOptionalExpenses = null;
+var appData ={
+    budjet : money,
+    timeData : time,
+    expenses: userExpenses,
+    optionalExpenses: userOptionalExpenses,
+    income : [], 
+    saving : false
+};
+
+alert(appData.budjet/30);
