@@ -11,4 +11,3 @@ let arr = ['plum.png', 'orange.jpg', 'apple.bmp'];
 for (const t of arr) {
     console.log(t)
 }
-// коссяк
